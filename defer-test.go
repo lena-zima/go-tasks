@@ -1,4 +1,4 @@
-package main
+package defertest
 
 import "fmt"
 
@@ -12,7 +12,7 @@ func ChangeValue() {
 	fmt.Println("New value: ", Global)
 }
 
-func main() {
+func defertest() {
 	fmt.Println("Initial value: ", Global)
 	ChangeValue()
 	fmt.Println("Current value: ", Global)
